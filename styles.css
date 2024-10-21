@@ -39,10 +39,12 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 0 2rem;
 }
 
-.hero-content {
-    text-align: center;
+.hero-content h1 {
+    font-size: 3rem;
 }
 
 .cta {
@@ -101,4 +103,89 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Adjust hero section for mobile */
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    /* Make navigation menu stack vertically */
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    /* Stack service cards vertically */
+    .service-container {
+        flex-direction: column;
+    }
+
+    /* Stack gallery images vertically */
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-container img {
+        max-width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    /* Stack testimonials vertically */
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials-container blockquote {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    /* Adjust form width */
+    form input, form textarea {
+        width: 100%;
+    }
+}
+
+/* Small screen devices (phones) */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .cta {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Reduce padding and font size for services and testimonials */
+    section {
+        padding: 2rem 1rem;
+    }
+
+    .service, .testimonials-container blockquote {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
 }
