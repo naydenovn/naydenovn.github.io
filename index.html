@@ -6,6 +6,7 @@
     <meta name="description" content="Professional car cleaning service for interior, exterior, and detailing.">
     <title>Car Cleaning Service</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
 
@@ -13,19 +14,24 @@
     <header>
         <nav>
             <div class="logo">CleanCar Services</div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="hero">
-        <div class="hero-content">
-            <h1>Professional Car Cleaning Service</h1>
+        <div class="hero-content fade-in">
+            <h1>Premium Car Cleaning Service</h1>
             <p>Interior & Exterior | Detailing | 100% Satisfaction Guaranteed</p>
             <a href="#contact" class="cta">Book Now</a>
         </div>
@@ -34,7 +40,7 @@
     <!-- Services Section -->
     <section id="services">
         <h2>Our Services</h2>
-        <div class="service-container">
+        <div class="service-container fade-up">
             <div class="service">
                 <h3>Exterior Wash</h3>
                 <p>Get your car looking brand new with our thorough exterior wash services.</p>
@@ -53,17 +59,17 @@
     <!-- Gallery Section -->
     <section id="gallery">
         <h2>Our Work</h2>
-        <div class="gallery-container">
-            <img src="images/car1.jpg" alt="Car Before Cleaning">
-            <img src="images/car2.jpg" alt="Car After Cleaning">
-            <img src="images/car3.jpg" alt="Detailed Car Interior">
+        <div class="gallery-container fade-up">
+            <img src="https://source.unsplash.com/featured/?car-cleaning" alt="Car Before Cleaning">
+            <img src="https://source.unsplash.com/featured/?car-detailing" alt="Car After Cleaning">
+            <img src="https://source.unsplash.com/featured/?car-interior" alt="Detailed Car Interior">
         </div>
     </section>
 
     <!-- Testimonials Section -->
     <section id="testimonials">
         <h2>What Our Customers Say</h2>
-        <div class="testimonials-container">
+        <div class="testimonials-container fade-up">
             <blockquote>"Fantastic service! My car looks brand new!" - John D.</blockquote>
             <blockquote>"The detailing was superb. Highly recommend!" - Sarah K.</blockquote>
         </div>
@@ -72,7 +78,7 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+        <form action="https://formspree.io/f/your-form-id" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message"></textarea>
@@ -86,7 +92,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 CleanCar Services. All Rights Reserved. </p>
+        <p>&copy; 2024 CleanCar Services. All Rights Reserved.</p>
     </footer>
 
 </body>
